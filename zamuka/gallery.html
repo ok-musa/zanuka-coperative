@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+
+        <img src="2.jpg" id="fullImg">
+        <span onclick="closeFullImg(pic)">X</span>
+    </div>
+    <div class="img">
+        <img src="2.jpg" onclick="openFullImg(this.src)">
+        <img src="4.jpg" onclick="openFullImg(this.src)">
+        <img src="9.jpg" onclick="openFullImg(this.src)">
+        <img src="7.jpg" onclick="openFullImg(this.src)">
+        <img src="3.jpg" onclick="openFullImg(this.src)">
+        <img src="1.jpg" onclick="openFullImg(this.src)">
+        <img src="moussa.jpg" onclick="openFullImg(this.src)">
+        <img src="download (3).jpg" onclick="openFullImg(this.src)">
+        <img src="2.jpg" onclick="openFullImg(this.src)">
+
+    </div>
+    <script>
+
+        
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fulImg.src = pic;
+}
+function closefullImg(){
+    fullImg.style.display = "none";
+}
+
+
+    </script>
+
+</body>
+</html>

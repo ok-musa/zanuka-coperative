@@ -1,0 +1,326 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background: black;
+}
+.menu
+{
+    background: linear-gradient(to bottom,transparent,white);
+    text-align: center;
+}
+label{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    font-family:  Arial,;
+}
+.menu ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(253, 253, 253);
+}
+.menu ul li
+{
+    width: 150px;
+    height: 15px;
+    padding: 15px;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    background: none;
+    color: #fff;
+}
+.active,.menu ul li:hover
+{
+    background: rgb(89, 89, 241);
+    border-radius: 4px;
+}
+.dive{
+    background: none;
+ 
+}
+h1{
+    color: white;
+    margin-top: 1cm;
+    margin-left: 90px;
+    font-size: 60px;
+    text-align: center;
+    justify-content: left;
+    text-align: left;
+    margin-left: 18cm;
+}
+.frow{
+    text-align: center;
+    font: 30px;
+    text-transform: capitalize;
+    justify-content: left;
+    text-align: left;
+    margin-left: 18cm;
+
+}
+.frow span{
+    color: rgb(216, 90, 122);
+}
+.word{
+    text-align: center;
+    width: 700px;
+    height: 180px;
+    justify-content: left;
+    text-align: left;
+    margin-left: 18cm;
+    font-size: 18px;
+    color: rgb(255, 118, 148);
+}
+.word a{
+ text-decoration: none;
+ color: white;
+}
+ .butto{
+        background-color: #4607da;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 22px;
+        border-radius: 30px;
+        transition: .4s; 
+    }
+ .butto:hover{
+        background-color: transparent;
+        border: 2px solid #f9004f;
+        cursor: pointer ;
+    }
+    .foto{
+        margin-top: -10cm;
+        margin-left: 60px;
+
+    }
+
+.dive::before{
+    
+        content: '';
+        display: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to left, transparent, #fff);
+        
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 2cm;
+    margin-left: -400px;
+    justify-content: left;
+}
+h3{
+    color: white;
+    margin-left: 90px;
+    font-size: 40px;
+}
+p{
+    color: white;
+    margin-left: 90px;
+    font-size: 30px;
+    text-align: center;
+}
+button{
+    background: none;
+    width: 200px;
+    height: 2cm;
+    font-size: 20px;
+    color: white;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+button,.btn{
+    background: forestgreen;
+}
+button,.vbd{
+background: none;
+}
+button:hover{
+    background: forestgreen;
+    color: white;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+button a:hover{
+    background: forestgreen;
+    color: white;
+}
+
+.service{
+    background: none;
+    width: 100%;
+    padding: 100px 0px;   
+   }
+   .title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+   }
+   .box{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 400px;
+   }
+   .card{
+       height: 365px;
+       width: 335px;
+       padding: 20px 35px;
+       background: #191919;
+       border-radius: 20px;
+       margin: 15px;
+       position: relative;
+       overflow: hidden;
+       text-align: center; 
+   }
+   .card i{
+       font-size: 50px;
+       display: block;
+       text-align: center;
+       margin: 25px 0px;
+       color: #f9004f;
+   }
+   h5{
+       color: white;
+       font-size: 23px;
+       margin-bottom: 15px;
+   }
+   .pra p{
+       color: #fcfc;
+       font-size: 16px;
+       line-height: 27px;
+       margin-bottom: 25px;
+   }
+   .card .button{
+       background-color: #f9004f;
+       color: white;
+       text-decoration: none;
+       border: 2px solid transparent;
+       font-weight: bold;
+       padding: 9px 22px;
+       border-radius: 30px;
+       transition: .4s; 
+   }
+   .card .button:hover{
+       background-color: transparent;
+       border: 2px solid #f9004f;
+       cursor: pointer ;
+   }
+   
+        .scroll{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid red;
+        }
+        .cover{
+            position: relative;
+            width: 90%;
+            height: 50%;
+        }
+        .cover::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background: linear-gradient(90deg, black, transparent);
+        }
+        .cover::after{
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background: linear-gradient(90deg, black, transparent);
+        }
+        .scroll-image{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            overflow: auto;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        .child{
+            min-width: 600px;
+            height: 450px;
+            margin: 1px 10px;
+            cursor: pointer;
+            border: 2px solid white;
+            overflow: hidden;
+        }
+        .child-img{
+            width: 100%;
+            height: 100%;
+        }
+        footer{
+            position: relative;
+            padding: 50px 0;
+        }
+        .footer-inner{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+        }
+        .footer-inner .col{
+            padding-right: 50px;
+        }
+        footer ul{
+            margin-left: 0;
+        }
+        footer ul li{
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        footer ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+        footer::before{
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -50px;
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(to top,transparent,#fff);
+        }
+        .copy{
+            background: rgb(80, 5, 255);
+            color: white;
+            font-size: 30px;
+            margin-left: 40px;
+            text-align: center;
+        }
+

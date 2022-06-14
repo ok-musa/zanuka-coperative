@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.jpg">
+    <title>scrool image</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3
+    .3.7/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: black;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .scroll{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid red;
+        }
+        .cover{
+            position: relative;
+            width: 90%;
+            height: 50%;
+        }
+        .cover::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background: linear-gradient(90deg, black, transparent);
+        }
+        .cover::after{
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background: linear-gradient(90deg, black, transparent);
+        }
+        .scroll-image{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            overflow: auto;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        .child{
+            min-width: 600px;
+            height: 450px;
+            margin: 1px 10px;
+            cursor: pointer;
+            border: 2px solid white;
+            overflow: hidden;
+        }
+        .child-img{
+            width: 100%;
+            height: 100%;
+        }
+        .icon{
+            color: rgb(15, 231, 15);
+            background-color: black;
+            font-size: 90px;
+            outline: none;
+            border: none;
+            padding: opx 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll">
+        <div>
+            <button class="icon"><i onclick="scroll()" class="fa-regular fa-arrow-left"></i></button>
+        </div>
+        <div class="cover">
+            <div class="scroll-image">
+                <div class="child"><img class="child-img" src="2.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="2.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="2.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="2.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="2.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="2.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="2.jpg" alt="image"></div>
+            </div>
+        </div>
+        <div>
+            <button class="icon"><i onclick="scroll()" class="fa-regular fa-arrow-right-"></i></button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        function scroll(){
+            var left = document.querySelector(".scroll-image");
+            left.scrollBy(350, 0);
+        }
+        function scroll(){
+            var eight = document.querySelector(".scroll-image");
+            right.scrollBy(350, 0);
+        }
+    </script>
+</body>
+</html>

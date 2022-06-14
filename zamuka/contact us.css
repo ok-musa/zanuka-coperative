@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    color: white;
+}
+header ul{
+    padding-left: 0;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+header ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 4cm;
+    height: 1cm;
+    transition: 0.5s;
+}
+header ul li :hover{
+    font-size: 20px;
+    color: rgb(248, 12, 12);
+    width: 4cm;
+    height: 1cm;
+}
+.text{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+}
+span{
+    color: rgb(230, 7, 7);
+}
+form{
+    background: rgb(46, 6, 226);
+    width: 20cm;
+    height: 15cm;
+    color: rgb(255, 255, 255);
+    border: 2px solid greenyellow;
+    border-radius: 4px;
+    margin-top: 4cm;
+}
+.img{
+   margin-left: -11cm;
+    
+}
+.input{
+    background: none;
+    color: rgb(246, 242, 242);
+    text-align: right;
+    font-size: 20px;
+    margin-top: -10cm;
+    justify-content: space-between;
+}
+ .con{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    
+}
+
+.input label{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.input input{
+    background: none;
+    width: 8cm;
+     height: 1cm;
+     color: rgb(10, 8, 8);
+     border: 1px solid rgb(25, 13, 47);
+
+}
+.input input[type="submit"]{
+    background: rgb(79, 79, 83);
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.input input[type="submit"]:hover{
+   background: black;
+   color: white;
+}
+
+footer{
+    position: relative;
+    padding: 50px 0;
+}
+.footer-inner{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.footer-inner .col{
+    padding-right: 50px;
+    color: #fff;
+}
+footer ul{
+    margin-left: 0;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+footer::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -50px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top,transparent,#fff);
+}
+.copy{
+    background: none;
+    color: white;
+    font-size: 30px;
+    margin-left: 40px;
+    text-align: center;
+}
